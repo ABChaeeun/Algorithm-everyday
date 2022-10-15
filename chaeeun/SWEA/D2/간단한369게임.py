@@ -14,11 +14,11 @@ for num in range(1, N + 1):
     b = b % 3
     c = c % 3
 
-    # 3
+    # 3이 3개 있을 경우
     if a == 0 and b == 0 and c == 0:
         print('--- ', end='')
 
-    # 2
+    # 3이 2개 있을 경우
     elif a != 0 and b == 0 and c == 0:
         print('-- ', end='')
     elif a == 0 and b != 0 and c == 0:
@@ -26,7 +26,7 @@ for num in range(1, N + 1):
     elif a == 0 and b == 0 and c != 0:
         print('-- ', end='')
 
-    # 1
+    # 3이 1개 있을 경우
     elif a != 0 and b != 0 and c == 0:
         print('- ', end='')
     elif a != 0 and b == 0 and c != 0:
@@ -34,6 +34,6 @@ for num in range(1, N + 1):
     elif a == 0 and b != 0 and c != 0:
         print('- ', end='')
 
-    # 0
+    # 3이 0개 있을 경우
     else:
         print('{} '.format(num), end='')
