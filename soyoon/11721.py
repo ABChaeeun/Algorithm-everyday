@@ -9,4 +9,5 @@ for i in string:
         print(i, end='\n')
     else:
         print(i, end='')
+        print()
     count += 1
