@@ -30,4 +30,4 @@ for i in range(n):
 print(len(res))
 for i in range(len(res)):
     sort_res = sorted(res)
-    print(sort_res[i])
+    print(sort_res)
