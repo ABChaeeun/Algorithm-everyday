@@ -1,2 +1,2 @@
 
-    while queue:
+            cnt = 1
