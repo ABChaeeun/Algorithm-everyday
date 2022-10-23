@@ -21,11 +21,18 @@
 
 # print(fib(int(input())))
 # 3. 타뷸레이션(상향식)
-def fib(n):
-    dp = [0 for i in range(n+1)] 
-    dp[1] = 1
+# def fib(n):
+#     dp = [0 for i in range(n+1)] 
+#     dp[1] = 1
 
-    for i in range(2, n+1):
-        dp[i] = dp[i-1] + dp[i-2]
-    return dp[n]
-print(fib(int(input())))
+#     for i in range(2, n+1):
+#         dp[i] = dp[i-1] + dp[i-2]
+#     return dp[n]
+# print(fib(int(input())))
+
+def fib(N: int) -> int:
+    x, y = 0, 1
+    for i in range(0, N):
+        x, y = y, x + y
+    return x
+fib(5)
