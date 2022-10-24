@@ -1,2 +1,2 @@
 
-    while queue:
+            nx, ny = x+dx,y+dy
