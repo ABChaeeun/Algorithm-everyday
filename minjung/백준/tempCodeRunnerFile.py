@@ -1,2 +1,2 @@
 
-            cnt = 1
+            nx, ny = x+dx,y+dy
