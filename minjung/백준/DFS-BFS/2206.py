@@ -1,7 +1,7 @@
 from collections import deque
 
 queue = deque([])
-def bfs(x,y,iscrash):
+def bfs(x,y,iscrash): 
     queue.append([x,y,iscrash])
     visited[x][y][iscrash] = 1
     d = [(-1,0),(1,0),(0,-1),(0,1)]
