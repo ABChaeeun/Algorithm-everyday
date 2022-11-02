@@ -1,3 +1,5 @@
+# 조합 (combination) 이용
+
 import itertools
 
 N, S = map(int, input().split())
