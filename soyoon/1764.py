@@ -1,16 +1,15 @@
 n, m = map(int, input().split())
-heard = []
-seen = []
-heard_seen = []
+heard = set()
+seen = set()
 
 for i in range(n):
-    heard.append(input())
-for j in range(m):
-    seen.append(input())
+    heard.add(input())
 
-for k in seen:
-    if k in heard:
-        heard_seen.append(k)
+for j in range(m):
+    seen.add(input())
+
+heard_seen = sorted(list(heard & seen))
 
 print(len(heard_seen))
-print(sorted(heard_seen))
+for l in heard_seen:
+    print(l)
