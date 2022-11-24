@@ -6,7 +6,7 @@ def solution(brown, yellow):
     for width in range(s-1,0,-1):
         if s%width :
             continue
-        height = s/width;
+        height = s/width
         y = (width-2)*(height-2)
         b = s-y
         if(y==yellow and b==brown):
