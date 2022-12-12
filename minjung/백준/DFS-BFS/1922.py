@@ -25,7 +25,7 @@ n = int(input())
 m = int(input())
 
 # 부모 테이블 초기화
-parent = [0] *(n-1)
+parent = [0] *(n+1)
 
 # 자기 자신의 부모를 자기로 초기화
 for i in range(1,n+1):
