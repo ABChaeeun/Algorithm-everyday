@@ -37,7 +37,7 @@ function solution(A,B){
     //     answer += A[i] * B[i]
     // }
     
-    // ver1-4
+    // ver1-4 - 참고
       A = A.sort((a,b) => a-b) // 오름차순 정렬
       B = B.sort((a,b) => b-a) // 내림차순 정렬
       for (let i=0; i<A.length; i++) {
