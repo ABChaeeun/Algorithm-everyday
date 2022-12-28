@@ -7,7 +7,8 @@ input = sys.stdin.readline
 
 n = int(input())
 m = int(input())
-bus_cost = [[100001 for _ in range(n+1)] for _ in range(n+1)]
+INF = int(1e9)
+bus_cost = [[INF for _ in range(n+1)] for _ in range(n+1)]
 for _ in range(m):
      a, b, c = map(int,input().split())
      bus_cost[a][b] = min(c,bus_cost[a][b])
@@ -15,15 +16,13 @@ for _ in range(m):
 for k in range(1,n+1):
     for i in range(1,n+1):
         for j in range(1,n+1):
-            if i == j:
-                bus_cost[i][j]= 0
-            else:
+            if i!=j:
                 bus_cost[i][j] = min(bus_cost[i][j],bus_cost[i][k]+bus_cost[k][j])
 
 
 for row in bus_cost[1:]:
     for col in row[1:]:
-        if col == 100001:
+        if col == INF:
             print(0,end = " ")
         else:
             print(col,end = " ")
